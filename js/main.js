@@ -10,9 +10,14 @@
         lightBox.classList.toggle('show-lightbox');
 
         // try making the video autoplay when opened
+
+        // check the playstate of the video
+        // if it's pause or no playing, that means we just opened the lightbox
+        // and we want the video to play.
         if (lbVideo.paused) {
             lbVideo.play();
         } else {
+        // lightbox is open and we want the video to rewind and stop when we close it.
             lbVideo.currentTime = 0;
             lbVideo.pause();
         }
