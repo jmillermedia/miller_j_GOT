@@ -3,21 +3,42 @@
 <head>
 <meta charset="UTF-8">
 <title>DOM Traversal</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
 <link href="css/meyerReset.css" rel="stylesheet" type="text/css" media="screen">
 <link href="css/GOT_master.css" rel="stylesheet" type="text/css" media="screen">
 </head>
 
 <body>
     <main>
+        <section class="lightbox">
+            <span class="close-lb">x</span>
 
+
+            <video src="videos/House-Stark.mp4"></video>
+                        <!-- custom video controls -->
+                        <section class="video-controls">
+                            <i class="fas fa-fast-backward" id="rewindButton"></i>
+                            <i class="fas fa-pause-circle" id="playButton"></i>
+                            <i class="fas fa-fast-forward" id="fastForward"></i>
+                            <i class="fas fa-volume-mute" id="muteUnmute"></i>
+                            <input type="range" min="1" max="100" value="100" class="slider" id="volumeSlider">
+                        </section>
+                        <!-- end custom video controls -->
+            
+        </section>
     <section id="imageContainer">
-    	<div id="houseImages"> <!-- add in all of the images to make a scrolling "banner" -->
-    		<img src="images/stark.jpg"/>
-    		<img src="images/baratheon.jpg"/>
-    		<img src="images/lannister.jpg"/>
-    		<img src="images/tully.jpg"/>
-    		<img src="images/greyjoy.jpg"/>
-    		<img src="images/arryn.jpg"/>
+    	<div id="houseImages" style="right: 0px"> <!-- add in all of the images to make a scrolling "banner" -->
+            <img src="images/stark.jpg" alt="GOT Crest Stark"/>
+            <img src="images/baratheon.jpg" alt="GOT Crest Baratheon"/>
+            <img src="images/lannister.jpg" alt="GOT Crest Lannister"/>
+            <img src="images/tully.jpg" alt="GOT Crest Tully"/>
+            <img src="images/greyjoy.jpg" alt="GOT Crest Greyjoy"/>
+            <img src="images/arryn.jpg" alt="GOT Crest Arryn"/>
+            <img src="images/frey.jpg" alt="GOT Crest Fre"/>
+            <img src="images/targaryen.jpg" alt="GOT Crest Targaryen"/>
+            <img src="images/tyrell.jpg" alt="GOT Crest Tyrell"/>
         </div>
     </section>
 
@@ -30,14 +51,18 @@
             <li><div class="sigilContainer tully" data-offset="3"></div></li>
             <li><div class="sigilContainer greyjoy" data-offset="4"></div></li>
             <li><div class="sigilContainer arryn" data-offset="5"></div></li>
+            <li><div class="sigilContainer frey" data-offset="6"></div></li>
+            <li><div class="sigilContainer targaryen" data-offset="7"></div></li>
+            <li><div class="sigilContainer tyrell" data-offset="8"></div></li>
         </ul>
     </nav>
 
-    <h1>clever tagline goes here</h1><!-- replace this with the house name -->
+    <h1 class="house-name">Javascript is coming...</h1><!-- replace this with the house name -->
 
+    
     <p class="house-info"></p><!-- replace this with house details (github gist) -->
 </main>  <!--end mainContainer-->
 
-<script src="js/GOT_master.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
