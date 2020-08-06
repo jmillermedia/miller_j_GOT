@@ -3,8 +3,14 @@
 # Jonathan Miller - Game Of Thrones Lightbox Info Page
 
 ## Assignment Description:
+Use the in-class build as your starting point, and finish developing the application to the specs provided. Use modern web development best practices (Terminal, Git / Github, JavaScript) to create an up-and-running app with custom video controls and lightbox functionality.
 
-## Assignment Requirments:
+
+## Assignment Requirements:
+Add the final house sigils and video to your app; update the JS as required. Each sigil image should trigger a side-scrolling animation. When the animation is complete, the lightbox should open, containing the House video including custom controls. The lightbox should close when the video reaches its end, or the user clicks the close button. Show the related Great House information on the page, using an array to hold that data and retrieving it when the banner animation is done. The heading should update as well, and display
+the name of the current House. 
+
+Follow best practices as outlined in class when adding script and creating branches, commits etc. Use a document outline and semantic tagging - remember that even though we don’t specifically talk about those things, you’re expected to continue developing with those tools.
 
 ## MIT License:
 MIT License
